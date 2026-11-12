@@ -22,6 +22,7 @@ debug/
 Release/
 release/
 .vscode/
+.clangd/
 settings.json
 
 # Intermediate object files
