@@ -24,9 +24,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
+#include "stm32_ub_vga_screen.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
+#include "Back.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -107,9 +109,10 @@ int main(void)
   UB_VGA_Screen_Init(); // Init VGA-Screen
 
   UB_VGA_FillScreen(VGA_COL_WHITE);
-  UB_VGA_SetPixel(10,10,10);
-  UB_VGA_SetPixel(0,0,0x00);
-  UB_VGA_SetPixel(319,0,0x00);
+  API_draw_line(100, 40, 10, 40, VGA_COL_BLACK, 1, 0);
+  // UB_VGA_SetPixel(10,10,10);
+  // UB_VGA_SetPixel(0,0,0x00);
+  // UB_VGA_SetPixel(319,0,0x00);
 
   int i;
 

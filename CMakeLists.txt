@@ -34,6 +34,8 @@ enable_language(C ASM)
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME}
     Core/Src/Middle.c
+    Core/Src/Back.c
+    Core/Inc/Back.h
     Core/Inc/Structure.h
     Core/Inc/Middle.h)
 
