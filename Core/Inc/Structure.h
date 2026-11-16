@@ -66,6 +66,6 @@ typedef struct package
     int READY; //state front-end
 } PACKAGE;
 
-PACKAGE Backlog[ARRAYLENGTH];
+extern PACKAGE Backlog[ARRAYLENGTH];
 
 #endif /* __STRUCTURE_H__ */
