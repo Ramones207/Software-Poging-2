@@ -11,21 +11,21 @@ Opdracht: SOFTON
 #ifndef __STRUCTURE_H__
 #define __STRUCTURE_H__
 
+#define ARRAYLENGTH 50
 #define UNDEFINED 999
 
-#define Line 1 
-#define Rectangle 2
-#define Text 3
-#define BitMap 4
-#define ClearScreen 5
-#define Wait 6 
-#define Repeat 7
-#define Circle 8
-#define Figure 9
+#define LINE 1 
+#define RECTANGLE 2
+#define TEXT 3
+#define BITMAP 4
+#define CLEARSCREEN 5
+#define WAIT 6 
+#define REPEAT 7
+#define CIRCLE 8
+#define FIGURE 9
 //#define 10 //Eigen Functie toevoegen
 
-
-struct package
+typedef struct package
 {
     int func;
 
@@ -55,6 +55,7 @@ struct package
     char* fontNaam;
     int fontStyle;
     int fontSize;
+    struct package* pStructBegin;
 
     //Overig (E.g. bitmap; wacht)
     int bitNmr;
@@ -63,6 +64,8 @@ struct package
     int herhalingen;
 
     int READY; //state front-end
-};
+} PACKAGE;
+
+PACKAGE Backlog[ARRAYLENGTH];
 
 #endif /* __STRUCTURE_H__ */
