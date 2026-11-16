@@ -11,7 +11,6 @@ Opdracht: SOFTON
 #ifndef __STRUCTURE_H__
 #define __STRUCTURE_H__
 
-
 #define UNDEFINED 999
 
 #define Line 1 
