@@ -15,6 +15,7 @@ void API_draw_line(int x_1, int y_1, int x_2, int y_2, int color, int weight, in
     float x_float = x_1;
     int xp, yp;
 
+
     if (abs(y_2-y_1) < abs(x_2-x_1))
     {
         float rc = 1.0f*(y_2-y_1)/(x_2-x_1);
@@ -52,4 +53,24 @@ int API_draw_bitmap(int x_lup, int y_lup, int bm_nr)
 int API_clearscreen(int color)
 {
     UB_VGA_FillScreen(color);
+}
+
+int API_wait(int msecs)
+{
+
+}
+
+int API_repeat_commands(int nr_previous_commands, int iterations, int reserved)
+{
+
+}
+
+int API_draw_circle(int x, int y, int radius, int color, int reserved)
+{
+
+}
+
+int API_draw_figure(int x_1, int y_1, int x_2, int y_2, int x_3, int y_3, int x_4, int y_4, int x_5, int y_5, int color, int reserved)
+{
+    
 }
