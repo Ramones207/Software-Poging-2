@@ -35,7 +35,9 @@ enable_language(C ASM)
 add_executable(${CMAKE_PROJECT_NAME}
     Core/Src/Middle.c
     Core/Inc/Structure.h
-    Core/Inc/Middle.h)
+    Core/Inc/Middle.h
+    Core/Src/Front.c
+    Core/Inc/Front.h)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
