@@ -66,3 +66,4 @@ settings.json
 *.idb
 *.pdb
 .vscode/settings.json
+.clangd
